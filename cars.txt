@@ -1,0 +1,32 @@
+CARS
+Questo database sarà adatto a concessionari fisici (quindi con un parco auto relativamente limitato).
+Inoltre, questo catalogo non fungerà da archivio: una volta che un'auto sarà venduta, verrà eliminata.
+Per quanto riguarda testi, si fa riferimento all'utilizzo di set di caratteri a singolo byte: quindi il numero di byte coincide con quello di caratteri.
+
+id - TINYINT - UNSIGNED - PRIMARY KEY - NOTNULL - AUTOINCREMENT - UNIQUE
+targa - VARCHAR(7) - NULL - UNIQUE
+marca - VARCHAR(20) - NOTNULL
+modello - VARCHAR(20) - NOTNULL
+versione - VARCHAR(20) - NULL
+colore - VARCHAR(10) - NULL
+foto - TEXT - NULL
+chilometraggio - MEDIUMINT - UNSIGNED - NOTNULL
+classe_emissioni_euro - TINYINT - UNSIGNED - NULL
+cambio - VARCHAR(20) - NULL
+numero_marce - TINYINT - UNSIGNED - NULL
+numero_ruote_motrici - TINYINT - UNSIGNED - NULL
+trazione - VARCHAR(20) - NULL
+motorizzazione - VARCHAR(20) - NULL
+potenza_kw - SMALLINT - UNSIGNED - NULL
+cilindrata_cc - SMALLINT - UNSIGNED - NULL
+alimentazione - VARCHAR(10) - NOTNULL
+peso - SMALLINT - UNSIGNED - NULL
+immatricolazione_anno - YEAR - NOTNULL
+immatricolazione_mese - TINYINT - UNSIGNED - NOTNULL
+numero_porte - TINYINT - UNSIGNED - NOTNULL
+numero_posti - TINYINT - UNSIGNED - NOTNULL
+abs - TINYINT - UNSIGNED - NULL
+esp - TINYINT - UNSIGNED - NULL
+cruise_control - TINYINT - UNSIGNED - NULL
+climatizzatore - TINYINT - UNSIGNED - NULL
+prezzo - MEDIUMINT - UNSIGNED - NOTNULL
